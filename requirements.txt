@@ -1,4 +1,4 @@
 Flask==2.0.3
-pymysql
+pyodbc
 flask_login
 flask_sqlalchemy
