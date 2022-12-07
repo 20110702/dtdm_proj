@@ -1,0 +1,4 @@
+Flask==2.0.3
+pymysql
+flask_login
+flask_sqlalchemy
