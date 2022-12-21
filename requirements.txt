@@ -1,4 +1,5 @@
 Flask==2.0.3
-pyodbc
+pymysql
 flask_login
 flask_sqlalchemy
+gunicorn==20.1.0; python_version > '3.0'
