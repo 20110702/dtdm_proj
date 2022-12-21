@@ -15,7 +15,8 @@ DB_NAME = "todolist"
 def create_app():
     app = Flask(__name__)
     app.config["SECRET_KEY"] = KEY
-    app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://" + USERNAME +":"+ PASSWORD +"@/"+ DB_NAME + "?unix_socket=/cloudsql/absolute-advice-367518:us-central1:dtdm-note-app"
+#    app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://" + USERNAME +":"+ PASSWORD +"@/"+ DB_NAME + "?unix_socket=/cloudsql/absolute-advice-367518:us-central1:dtdm-note-app"
+    app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://root:male0011@127.0.0.1:3306/testdb"
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
     db.init_app(app)
     
